@@ -1,13 +1,30 @@
+
 def bubble_sort(array)
-  array.sort
+  sorted_array = [];
+ array.map.with_index do |val,indx|
+    i=0
+    if (indx < array.length)
+      while i < array.length-1
+        if(array[i] > array[i+1])
+          next_value = array[i+1]
+          array[i+1] = array[i]
+          array[i] = next_value
+          sorted_array = array
+        end
+        i += 1
+      end
+    
+    end
+  end
+  sorted_array
 end
 
-def bubble_sort_by(ary)
-  
-  {|a, b| b <=> a}
-end
+# def bubble_sort_by(ary)
 
-p bubble_sort_by(["hi", "hey", "hello"])
+#   {|a, b| b <=> a}
+# end
+
+p  bubble_sort([4,2,3,1,3,56,8,9,12])
 
 
 
