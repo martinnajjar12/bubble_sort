@@ -12,6 +12,9 @@
 
 To get a local copy up and running follow these simple example steps.
 
+- Clone this repository into your computer
+- To run, enter this command in your terminal (inside the project's directory) "ruby app.rb"
+
 ### Prerequisites
 
 Only Ruby.
